@@ -1,0 +1,39 @@
+<scroll-view class="index-container">
+  <view class="title">收款码合并</view>
+  <view class="receipt-code__list">
+    <view class="receipt-code__item" a:for="{{receiptCodelist}}" key="{{item}}">
+      <view onTap="onSelectPayCode" data-type="{{item.type}}">
+        <image src="{{item.icon}}" mode="aspectFit" class="icon"/>
+        <text>{{item.text}}</text>
+      </view>
+      <navigator class="get-path" url="/pages/helper/helper" >{{item.getPath}}</navigator>
+    </view>
+    <!-- <view class="pay-name"><text>向</text><input type="text" placeholder="请输入收款人姓名" /><text>付款</text></view> -->
+    <!-- <view class="tip-text"><text>收款人名称会显示在收款界面</text></view> -->
+    <view class="btn-list">
+      <button type="primary" class="marge-btn" onTap="pay">立即合并</button>
+      <!-- <button class="share-btn" onTap="onShareAppMessage">分享好友</button> -->
+    </view>
+    <view class="pay-text">
+      <text>合并需要收费3.50元</text>
+      <text>付款后，二维码永久有效，二维码永不过期</text>
+    </view>
+    <view class="code-item" a:if="{{codeUrl}}">
+      <view class="code-title"></view>
+      <view class="code-area">
+        <image src="{{codeUrl}}" mode="aspectFit" onLongTap="saveCode" data-url="{{codeUrl}}">
+        </view>
+        <view class="code-footer">长按上面二维码保存到手机</view>
+      </view>
+      <view class="tab-bar">
+        <navigator url="/pages/Index/index" open-type="redirect">
+          <text class="index active">首页</text>
+        </navigator>
+        <navigator url="/pages/safe/safe" open-type="redirect">
+          <text class="safe">安全</text>
+        </navigator>
+        <navigator url="/pages/personalCenter/personalCenter" open-type="redirect">
+          <text class="center">个人中心</text>
+        </navigator>
+      </view>
+    </scroll-view>

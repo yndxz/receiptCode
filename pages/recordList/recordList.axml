@@ -1,0 +1,22 @@
+<view class="record-container">
+  <view class="record">
+    <view class="record-list" a:if="{{false}}">
+      <text>合并记录</text>
+    </view>
+    <view class="empty" a:else>
+      <text>暂无合并记录</text>
+      <button type="primary" size="defaultSize" onTap="coalition">立即合并</button>
+    </view>
+  </view>
+     <view class="tab-bar">
+    <navigator url="/pages/Index/index" open-type="redirect">
+      <text class="index">首页</text>
+    </navigator>
+    <navigator url="/pages/safe/safe" open-type="redirect">
+      <text class="safe">安全</text>
+    </navigator>
+    <navigator url="/pages/personalCenter/personalCenter" open-type="redirect">
+      <text class="center active">个人中心</text>
+    </navigator>
+  </view>
+</view>

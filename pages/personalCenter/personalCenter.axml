@@ -1,0 +1,25 @@
+<view class="personal-container">
+  <view class="user">
+    <view class="user-info">
+      <image class="avatar" src="{{userInfo.avatar}}" background-size="cover"></image>
+      <text class="nickname">{{userInfo.nickName || 'this is box'}}</text>
+    </view>
+    <view class="record">
+      <text onTap="coalitionRecord">合并记录 <image src="./../../arrow.png"  mode="aspectFit" /></text>
+    </view>
+  </view>
+
+
+   <view class="tab-bar">
+    <navigator url="/pages/Index/index" open-type="redirect">
+      <text class="index">首页</text>
+    </navigator>
+    <navigator url="/pages/safe/safe" open-type="redirect">
+      <text class="safe">安全</text>
+    </navigator>
+    <navigator url="/pages/personalCenter/personalCenter" open-type="redirect">
+      <text class="center active">个人中心</text>
+    </navigator>
+  </view>
+
+</view>

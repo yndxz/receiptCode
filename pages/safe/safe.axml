@@ -1,0 +1,19 @@
+<view class="record-container">
+  <view class="safe-list">
+    <view class="safe-item" a:for="{{safeList}}" key="{{item}}">
+      <text class="title">{{item.title}}</text>
+      <text class="text">{{item.text}}</text>
+    </view>
+  </view>
+  <view class="tab-bar">
+    <navigator url="/pages/Index/index" open-type="redirect">
+      <text class="index">首页</text>
+    </navigator>
+    <navigator url="/pages/safe/safe" open-type="redirect">
+      <text class="safe active">安全</text>
+    </navigator>
+    <navigator url="/pages/personalCenter/personalCenter" open-type="redirect">
+      <text class="center">个人中心</text>
+    </navigator>
+  </view>
+</view>

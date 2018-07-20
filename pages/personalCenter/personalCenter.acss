@@ -1,0 +1,95 @@
+.personal-container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+.user,.user-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user{
+  flex: 1;
+}
+.user-info{
+  width: 100%;
+  background: white;
+}
+.user-info .avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin-top: 20rpx;
+}
+
+.user-info .nickname {
+  font-size: 40rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+}
+.record{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  width:100%;
+  text-align: center;
+}
+.record text{
+  margin-top: 20rpx;
+  cursor: pointer;
+  background: white;
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 0 30rpx;
+  position: relative;
+}
+.record image{
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  right:30rpx;
+  width:50rpx;
+}
+
+
+
+
+  .tab-bar{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    background: white;
+  }
+  .tab-bar navigator{
+    flex: 1;
+    height: 100rpx;
+  }
+  .tab-bar text{
+    height: 100rpx;
+    background-position: top center;
+    background-size: 60rpx;
+    background-repeat: no-repeat;
+    display: block;
+    padding-top:60rpx;
+
+  }
+  .tab-bar .index{
+     background-image:url('../assets/index_icon.png');
+    }
+    
+      .tab-bar .safe{
+     background-image:url('../assets/safe_icon.png');
+    }
+    
+      .tab-bar .center.active{
+     background-image:url('../assets/center_active_icon.png');
+  }

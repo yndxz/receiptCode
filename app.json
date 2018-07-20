@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/Index/index",
+    "pages/safe/safe",
+    "pages/recordList/recordList",
+    "pages/personalCenter/personalCenter",
+      "pages/helper/helper"
+  ],
+  "tabBar": {
+    "items": [
+      {
+        "pagePath": "index",
+        "name": "首页"
+      },
+      {
+        "pagePath": "sefaty",
+        "name": "安全保障"
+      },
+      {
+        "pagePath": "personalCenter",
+        "name": "个人中心"
+      }
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+<view class="helper-container">
+  <view class="helper-list">
+    <view class="helper-item" id="alipay">
+      <text class="title">如何获取支付宝收款码</text>
+      <view class="item" >
+        <view>
+           <text>点击首页“收钱”</text>
+            <image src="./../../assets/alipay_1.jpg" mode="aspectFit"/>
+          </view>
+           <view>
+           <text>点击“保存图片”</text>
+            <image src="./../../assets/alipay_2.jpg" mode="aspectFit"/>
+        </view>
+      </view>
+    </view>
+      <view class="helper-item" id="weichat">
+      <text class="title">如何获取微信收款码</text>
+      <view class="item" >
+        <view>
+           <text>点击右上角“+”号，在点击收付款</text>
+            <image src="./../../assets/weichat_1.jpg" mode="aspectFit"/>
+          </view>
+           <view>
+           <text>点击“保存图片”</text>
+            <image src="./../../assets/weichat_2.jpg" mode="aspectFit"/>
+          </view>
+          <view>
+           <text>点击“保存图片”</text>
+            <image src="./../../assets/weichat_3.jpg" mode="aspectFit"/>
+        </view>
+      </view>
+    </view>
+
+   <view class="helper-item" id="qq">
+      <text class="title">如何获取QQ收款码</text>
+      <view class="item" >
+        <view>
+           <text>点击右上角“+”号，在点击收付款”</text>
+            <image src="./../../assets/qq_1.jpg" mode="aspectFit"/>
+          </view>
+           <view>
+           <text>点击“保存图片”</text>
+            <image src="./../../assets/qq_2.jpg" mode="aspectFit"/>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+  </view>
+  </view>
+</view>

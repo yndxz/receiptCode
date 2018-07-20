@@ -1,0 +1,40 @@
+.helper-container {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.helper-list{
+  flex: 1;
+  box-sizing: border-box;
+  width:100%;
+}
+.helper-item{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: white;
+  margin-top: 20rpx;
+}
+.helper-item .title{
+ display: flex;
+ justify-content: center;
+ padding: 30rpx 0;
+}
+.item{
+  display: flex;
+  flex-direction: row;
+}
+.item view{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item text{
+  font-size: 20rpx;
+}
+.item image{
+  width: 200rpx;
+}
